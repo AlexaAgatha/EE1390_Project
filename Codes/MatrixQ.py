@@ -64,7 +64,7 @@ plt.plot([35, -29], [8, -8], color = 'red', label = 'Given Line')
 
 plt.legend()
            
-plt.savefig('figure.png')
+plt.savefig('../Figures/Figure.png')
 
 
        
