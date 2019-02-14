@@ -60,8 +60,15 @@ plt.grid()
 plt.plot([A[0],B[0]],[A[1],B[1]], color = 'black', label = 'Chord A-B')
 plt.plot([C[0], Center[0]], [C[1], Center[1]], color = 'blue', label = 'Perpendicular bisector of A-B')
 plt.plot([35, -29], [8, -8], color = 'red', label = 'Given Line')
+plt.text(A[0]-0.5, A[1]+0.5, "A")
+plt.text(B[0]-0.5, B[1]+0.5, "B")
+plt.text(C[0]-0.5, C[1]+0.5, "C")
+plt.text(Center[0]-0.5, Center[1]+0.5, "O")
 
-
+plt.plot(A[0], A[1], "o", color = 'black')
+plt.plot(B[0], B[1], "o", color = 'black')
+plt.plot(Center[0], Center[1], "o", color = 'black')
+plt.plot(C[0], C[1], "o", color = 'black')
 plt.legend()
            
 plt.savefig('../Figures/Figure.png')
